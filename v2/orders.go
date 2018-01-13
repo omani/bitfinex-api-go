@@ -67,7 +67,7 @@ func (s *OrderService) History(symbol string) (OrderSnapshot, error) {
 	if err != nil {
 		return nil, err
 	}
-	fmt.Printf("raw: %#v\n", raw)
+	// fmt.Printf("raw: %#v\n", raw)
 
 	os, err := orderSnapshotFromRaw(raw)
 	if err != nil {
